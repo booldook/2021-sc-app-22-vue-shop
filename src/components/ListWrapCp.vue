@@ -1,14 +1,18 @@
 <template>
-  <div>
-  </div>
+  <ul>
+    <List />
+  </ul>
 </template>
 
 <script>
-export default {
+import List from './ListCp.vue';
 
+export default {
+  name: 'ListWrap',
+  components: { List },
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 
 </style>

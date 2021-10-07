@@ -1,14 +1,14 @@
 <template>
-  <div>
-  </div>
+  <li>
+  </li>
 </template>
 
 <script>
 export default {
-
+  name: 'List',
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 
 </style>
