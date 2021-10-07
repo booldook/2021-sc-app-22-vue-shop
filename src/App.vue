@@ -1,11 +1,13 @@
 <template>
   <div class="container my-3">
-    <TitleCp :title="mainTitle" />
+    <Title :title="mainTitle" />
+    <Search />
   </div>
 </template>
 
 <script>
-import TitleCp from './components/TitleCp.vue';
+import Title from './components/TitleCp.vue';
+import Search from './components/SearchCp.vue';
 
 export default {
   name: 'App',
@@ -14,7 +16,7 @@ export default {
       mainTitle: '다팔아 쇼핑몰',
     };
   },
-  components: { TitleCp },
+  components: { Title, Search },
 };
 </script>
 
