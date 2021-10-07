@@ -37,6 +37,7 @@ export default {
 <style lang="scss" scoped>
 .search-wrapper {
   @include rel;
+  margin-bottom: 1em;
   .bt-close {
     font-size: 1.25em;
     cursor: pointer;

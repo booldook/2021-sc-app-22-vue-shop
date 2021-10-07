@@ -2,8 +2,7 @@
   <div class="container my-3">
     <Title :title="mainTitle" />
     <Search @@change="onChangeQuery" />
-    <ListWrap />
-    <div></div>
+    <ListWrap @@click="onChangeList" :lists="foods" />
   </div>
 </template>
 
@@ -31,10 +30,13 @@ export default {
     onChangeQuery(v) {
       this.query = v;
     },
+    onChangeList(v) {
+      console.log(v);
+    },
   },
 };
 </script>
 
 <style lang="scss">
-
+/* 여기에 주석이라도 있어야 scss-loader가 실행된다. */
 </style>
